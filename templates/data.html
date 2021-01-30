@@ -1,0 +1,20 @@
+{% extends 'layout.html' %} {% block content %}
+<turbo-frame id="data_frame">
+	<table class="table table-striped">
+		<thead>
+			<th>Name</th>
+			<th>Address</th>
+			<th>Email</th>
+		</thead>
+		<tbody>
+			{% for d in dingers %}
+			<tr>
+				<td>{{ d.name }}</td>
+				<td>{{ d.address }}</td>
+				<td>{{ d.email }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</turbo-frame>
+{% endblock %}
