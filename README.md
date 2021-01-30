@@ -1,4 +1,4 @@
-# Hotwired Flask Demo
+# Hotwire Flask Demo
 
 ![Python application](https://github.com/bwghughes/hotwired-flask-demo/workflows/Python%20application/badge.svg)
 
