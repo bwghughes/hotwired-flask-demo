@@ -32,7 +32,3 @@ def data():
 				   email=f.email())
 		dingers.append(d)
 	return render_template("data.html", dingers=dingers)
-
-
-
-app.run()
