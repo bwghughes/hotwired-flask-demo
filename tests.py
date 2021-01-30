@@ -6,3 +6,12 @@ def test_home_page():
 		response = test_client.get('/')
 		assert response.status_code == 200
 		assert b"Dingers" in response.data
+
+
+def test_data_page():
+	# Create a test client using the Flask application configured for testing
+	with app.test_client() as test_client:
+		response = test_client.get('/data/')
+		assert response.status_code == 200
+		assert b"Dingers" in response.data
+		assert b"table" in response.data
